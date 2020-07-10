@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Glitch Loader</title>
+    <link rel="stylesheet" href="loader.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.js">  </script>
+<script src="style.js"></script>
+  </head>
+  <body>
+    <div class="" id="drawing_container">
+      <canvas id="canvas" width="300" height="300"></canvas>
+    </div>
+
+    <script type="text/javascript">
+      function domloaded() {
+
+        var c = document.getElementById("canvas");
+        var ctx = c.getContext('2d');
+        var j = 0, pixSize = 3, pixCount = 100;
+        for(var r = 0; r < pixCount; r++){
+          for(var i = 0; i < pixCount; i++){
+            if(i % pixCount === 0) {
+              j++;
+            }
+
+            ctx.fillStyle = 'hsl(' + 360 * Math.random() + ' , 50%, 50%)';
+            ctx.fillRect(i * pixSize, j * pixSize, 10, 10);
+          }
+        }
+      }
+
+      setInterval(domloaded, 150);
+
+    </script>
+
+  </body>
+</html>

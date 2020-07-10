@@ -1,0 +1,102 @@
+
+.glitch{
+  position: relative;
+  top: 0%;
+  margin: 18%;
+  color: #fff;
+  font-size: 80px;
+  font-family: verdana;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.glitch::before, gltch::after{
+  content: 'GLITCHIN';
+  position: absolute;
+  top: 0;
+  left: 0%;
+  right: 0%;
+  overflow: hidden;
+  background-color: #4e3273;
+  color: #fff;
+}
+
+.glitch::before{
+  left: 8px;
+  text-shadow: 2px 0 #00ffea;
+  animation: glitch 6s infinite linear;
+}
+
+.glitch::after{
+  left: 4px;
+  text-shadow: -2px 0 #fe3a7f;
+  animation: glitch 6s infinite linear;
+}
+
+@keyframes glitch {
+  0%{
+    clip: rect(55px,99999px,56px,0);
+  }
+  5%{
+    clip: rect(47px,99999px,30px,0);
+  }
+  10%{
+    clip: rect(33px,99999px,36px,0);
+  }
+  15%{
+    clip: rect(35px,99999px,9px,0);
+  }
+  20%{
+    clip: rect(63px,99999px,59px,0);
+  }
+  25%{
+    clip: rect(96px,99999px,98px,0);
+  }
+  30%{
+    clip: rect(48px,99999px,77px,0);
+  }
+  35%{
+    clip: rect(50px,99999px,34px,0);
+  }
+  40%{
+    clip: rect(60px,99999px,72px,0);
+  }
+  45%{
+    clip: rect(10px,99999px,81px,0);
+  }
+  50%{
+    clip: rect(2px,99999px,60px,0);
+  }
+  55%{
+    clip: rect(23px,99999px,89px,0);
+  }
+  60%{
+    clip: rect(76px,99999px,91px,0);
+  }
+  65%{
+    clip: rect(62px,99999px,30px,0);
+  }
+  70%{
+    clip: rect(60px,99999px,73px,0);
+  }
+  75%{
+    clip: rect(60px,99999px,87px,0);
+  }
+  80%{
+    clip: rect(2px,99999px,14px,0);
+  }
+  85%{
+    clip: rect(28px,99999px,87px,0);
+  }
+  90%{
+    clip: rect(73px,99999px,50px,0);
+  }
+  95%{
+    clip: rect(79px,99999px,70px,0);
+  }
+  100%{
+    clip: rect(17px,99999px,79px,0);
+  }
+
+}
