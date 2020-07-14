@@ -9,6 +9,7 @@
   font-weight: 600;
   text-align: center;
   text-transform: uppercase;
+
 }
 
 .glitch::before, gltch::after{
@@ -99,4 +100,11 @@
     clip: rect(17px,99999px,79px,0);
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  .glitch {
+    font-size: 40px;
+    top: 35%;
+  }
 }
