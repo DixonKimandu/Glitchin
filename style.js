@@ -1,3 +1,16 @@
+/*Loader Start*/
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(showPage, 3000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "contents";
+}
+/*Loader End*/
+
 $(document).ready(function(){
     flag = 0;
     $(".menuIcon").click(function(){
@@ -17,19 +30,6 @@ $(document).ready(function(){
         }
     });
 });
-
-/*Loader Start*/
-var myVar;
-
-function myFunction() {
-  myVar = setTimeout(showPage, 3000);
-}
-
-function showPage() {
-  document.getElementById("loader").style.display = "none";
-  document.getElementById("myDiv").style.display = "block";
-}
-/*Loader End*/
 
 /*Glitch Loader*/
 function domloaded() {
