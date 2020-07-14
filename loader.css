@@ -74,11 +74,21 @@
 }
 
 @keyframes animatebottom {
-  from{ bottom:-100px; opacity:0 }
-  to{ bottom:0; opacity:1 }
+  from{ right:-100px; opacity:0 }
+  to{ right:0; opacity:1 }
 }
 
 #myDiv {
   display: none;
   text-align: center;
+}
+
+@media screen and (max-width: 600px) {
+  #loader{
+    left: 35%;
+    top: 35%;
+    z-index: 1;
+    width: 120px;
+    height: 120px;  
+  }
 }
