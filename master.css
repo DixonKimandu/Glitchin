@@ -112,7 +112,7 @@ body{
     top:0;
     left: 0;
     right: 0;
-    background-color: #09131B;
+    /background-color: #09131B;
     color: white;
     overflow: hidden;
 }
@@ -154,4 +154,29 @@ body{
     top: 25px;
     left: 20%;
     z-index: 99;
+}
+
+@media screen and (max-width: 600px) {
+  .main, .menu {
+    width: 100%;
+  }
+
+  .menuIcon{
+    right: 30px;
+    top: 30px;
+  }
+
+  .menuItem{
+      display: block;
+      font-family: monospace;
+      font-size: 18px;
+      color: #fff;
+      font-weight: 300;
+      letter-spacing: 5px;
+      text-align: right;
+      margin-bottom: 30px;
+      margin-right: 130px;
+      position: relative;
+      cursor: pointer;
+  }
 }
