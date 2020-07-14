@@ -94,3 +94,42 @@ body{
   right: 1100px;
   z-index: 99;
 }
+
+@media screen and (max-width: 600px) {
+  #d1{
+    height: 150px;
+    width: 50px;
+    top: 150px;
+    left: 20px;
+    background-size: 200px 266px;
+    background-repeat:no-repeat;
+    background-position: -0px -75px;
+  }
+  #d2{
+    height: 237px;
+    width: 50px;
+    top: 100px;
+    left: 70px;
+    background-size: 200px 266px;
+    background-repeat:no-repeat;
+    background-position: -50px -35px;
+  }
+  #d3{
+    height: 300px;
+    width: 50px;
+    top: 45px;
+    left: 120px;
+    background-size: 200px 266px;
+    background-repeat:no-repeat;
+    background-position: -100px 0px;
+  }
+  #d4{
+    height: 150px;
+    width: 50px;
+    top: 80px;
+    left: 170px;
+    background-size: 200px 266px;
+    background-repeat:no-repeat;
+    background-position: -150px 5px;
+  }
+}
